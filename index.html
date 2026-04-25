@@ -1,520 +1,805 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Avinash Kodali is a Full Stack Software Engineer with 4 years of experience building scalable backend services, cloud-native platforms, and distributed systems using Java, Spring Boot, React, AWS, Kubernetes, and Apache Spark."
+    />
+    <meta name="theme-color" content="#08111f" />
+    <title>Avinash Kodali | Full Stack Software Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!--
+      Update external links and optional profile image in script.js.
+      This file is intentionally framework-free and can be opened directly in the browser.
+    -->
 
-  <title>Avinash Kodali</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
-
-  <!-- ======= Header ======= -->
-  <header id="header">
-    <div class="d-flex flex-column">
-
-      <div class="profile">
-        <img src="assets/img/profile-img-circle.png" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Avinash Kodali</a></h1>
-        <div class="social-links mt-3 text-center">
-          <a href="https://www.facebook.com/avinash.kodali.16/" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/avinashkodali/" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="https://github.com/avinashkodali" class="github"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/avinashkodali/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div>
-      </div>
-
-      <nav id="navbar" class="nav-menu navbar">
-        <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
-              <span>Portfolio</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Avinash Kodali</h1>
-      <p>I'm <span class="typed" data-typed-items="Software Developer"></span></p>
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <header class="site-header" id="top">
       <div class="container">
+        <nav class="nav" aria-label="Primary navigation">
+          <a class="brand" href="#hero" aria-label="Go to homepage hero section">
+            <span class="brand__mark">AK</span>
+            <span class="brand__text">Avinash Kodali</span>
+          </a>
 
-        <div class="section-title">
-          <h2>About</h2>
-          <p>Hey there! I'm a software developer who's all about turning ideas into functional code. With a love for
-            problem-solving and a knack for crafting user-friendly solutions, I dive into the digital world, creating
-            software that's both efficient and user-focused.</p>
-        </div>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-menu"
+            aria-label="Toggle navigation menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-        <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          <div class="nav-menu" id="site-menu">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#work">Work</a>
+            <a href="#certifications">Certifications</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+
+            <div class="nav-actions">
+              <button class="theme-toggle" type="button" aria-label="Switch to light theme">
+                <span class="theme-toggle__icon" aria-hidden="true">☀</span>
+              </button>
+              <a
+                class="button button--small button--primary"
+                href="#"
+                data-link-key="resumeUrl"
+                data-placeholder="Add your resume PDF path in script.js"
+              >
+                Resume
+              </a>
+            </div>
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Software Developer</h3>
-            <p class="fst-italic">
-              Passionate about developing software applications with a strong foundation in problem-solving, I thrive in
-              collaborative team environments, contributing effectively to deliver robust solutions.
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="hero section" id="hero">
+        <div class="container hero__grid">
+          <div class="hero__content reveal">
+            <p class="eyebrow">Full Stack Software Engineer</p>
+            <h1>Avinash Kodali</h1>
+            <h2 class="hero__headline">Building scalable cloud-native applications</h2>
+
+            <p class="hero__roles">
+              Focused on
+              <span
+                class="typewriter"
+                data-typewriter="Full Stack Engineering|Backend Systems|Cloud Infrastructure|Platform Engineering"
+              >Full Stack Engineering</span>
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 May 1995</span></li> -->
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+1 (623) 265 3810</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Arizona, USA</span></li>
-                </ul>
+
+            <p class="hero__description">
+              Software engineer with 4 years of experience delivering backend services, distributed
+              systems, and production-ready web applications using Java, Spring Boot, React, AWS,
+              Kubernetes, and Apache Spark.
+            </p>
+
+            <div class="hero__cta-group">
+              <a
+                class="button button--primary"
+                href="#"
+                data-link-key="resumeUrl"
+                data-placeholder="Add your resume PDF path in script.js"
+              >
+                View Resume
+              </a>
+              <a
+                class="button button--secondary"
+                href="#"
+                data-link-key="githubUrl"
+                data-placeholder="Add your GitHub URL in script.js"
+              >
+                GitHub
+              </a>
+              <a
+                class="button button--secondary"
+                href="#"
+                data-link-key="linkedinUrl"
+                data-placeholder="Add your LinkedIn URL in script.js"
+              >
+                LinkedIn
+              </a>
+              <a class="button button--ghost" href="#contact">Contact Me</a>
+            </div>
+
+            <ul class="hero__metrics" role="list" aria-label="Key career highlights">
+              <li class="metric-card">
+                <strong>1,000+</strong>
+                <span>users supported on an event platform</span>
+              </li>
+              <li class="metric-card">
+                <strong>30%</strong>
+                <span>improvement in ADAS testing efficiency</span>
+              </li>
+              <li class="metric-card">
+                <strong>10%</strong>
+                <span>increase in forecasting accuracy</span>
+              </li>
+              <li class="metric-card">
+                <strong>7</strong>
+                <span>cloud and platform certifications</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__visual reveal reveal--delay-1">
+            <div class="panel panel--profile">
+              <div class="profile-frame" data-profile-image>
+                <div class="profile-placeholder" role="img" aria-label="Profile image placeholder">
+                  <span>Profile Image Placeholder</span>
+                </div>
               </div>
-              <div class="col-lg-6">
-                <ul>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>M.S. Computer
-                      Engineering</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>avinashkodali45@gmail.com</span>
-                  </li>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> -->
-                </ul>
+
+              <div class="panel__body">
+                <p class="panel__label">Role fit</p>
+                <div class="tag-group">
+                  <span class="tag">Software Engineer</span>
+                  <span class="tag">Full Stack Engineer</span>
+                  <span class="tag">Backend Engineer</span>
+                  <span class="tag">Cloud Engineer</span>
+                  <span class="tag">Platform Engineer</span>
+                </div>
               </div>
             </div>
-            <p>I am an aspiring software developer who enjoys connecting the dots: be it ideas from different
-              disciplines, people from different teams, or applications from different industries. I have strong
-              technical skills and an academic background in engineering, statistics, and machine learning. 👨‍💻</p>
-            <p>My passion lies in solving business problems by leveraging data-driven strategies and effectively
-              communicating complex ideas to non-technical stakeholders. I can seamlessly adapt to various industries,
-              delivering software solutions that meet high-performance standards. 🚀</p>
-            <p>During my role as a Research Assistant, I actively contributed to various aspects of research, supporting
-              diverse projects and aiding in essential research tasks within the team. 🧪📊🔬</p>
+
+            <div class="panel panel--stack">
+              <div>
+                <p class="panel__label">Core stack</p>
+                <div class="tag-group">
+                  <span class="tag">Java</span>
+                  <span class="tag">Spring Boot</span>
+                  <span class="tag">React</span>
+                  <span class="tag">AWS</span>
+                  <span class="tag">Kubernetes</span>
+                  <span class="tag">Apache Spark</span>
+                  <span class="tag">Terraform</span>
+                  <span class="tag">Microservices</span>
+                </div>
+              </div>
+
+              <div class="panel__details">
+                <div>
+                  <span class="panel__meta">Current emphasis</span>
+                  <p>Backend systems, cloud-native platforms, production reliability, and developer velocity.</p>
+                </div>
+                <div>
+                  <span class="panel__meta">Recent environments</span>
+                  <p>Enterprise supply chain, university platforms, forecasting research, and automotive simulation.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
+      <!-- About Section -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">About</p>
+            <h2>Backend-first engineering with product-minded execution</h2>
+            <p>
+              I build software for real production complexity: event-driven workflows, cloud-native
+              microservices, distributed processing jobs, and user-facing applications that need to be
+              reliable at scale.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <article class="about-copy reveal">
+              <p>
+                Over the last 4 years, I have worked across enterprise supply chain systems at Walmart,
+                platform development at Arizona State University, energy forecasting research, and
+                automotive ADAS tooling at Tata Consultancy Services.
+              </p>
+              <p>
+                My work consistently sits at the intersection of backend engineering, cloud
+                infrastructure, and delivery quality. I enjoy improving performance, modernizing
+                services, automating repetitive work, and making production systems easier to support.
+              </p>
+            </article>
+
+            <div class="about-highlights">
+              <article class="info-card reveal reveal--delay-1">
+                <h3>Distributed systems</h3>
+                <p>
+                  Built and optimized backend workflows with Java, Spring Boot, Apache Spark,
+                  microservices, and event-driven architectures.
+                </p>
+              </article>
+              <article class="info-card reveal reveal--delay-2">
+                <h3>Cloud and platform</h3>
+                <p>
+                  Deployed services on AWS, ECS, and Kubernetes while automating infrastructure with
+                  Terraform and improving release workflows.
+                </p>
+              </article>
+              <article class="info-card reveal reveal--delay-3">
+                <h3>Reliability and delivery</h3>
+                <p>
+                  Strengthened monitoring, alerting, testing, incident response, root cause analysis,
+                  and engineering documentation across production systems.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="section section--alt" id="skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Skills</p>
+            <h2>Tech stack and engineering breadth</h2>
+            <p>
+              A practical stack across backend systems, web applications, data engineering, cloud
+              infrastructure, and applied AI/ML workflows.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-card reveal">
+              <h3>Languages</h3>
+              <div class="chip-list">
+                <span class="chip">Java</span>
+                <span class="chip">Python</span>
+                <span class="chip">JavaScript</span>
+                <span class="chip">TypeScript</span>
+                <span class="chip">SQL</span>
+                <span class="chip">Linux</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal reveal--delay-1">
+              <h3>Web and backend</h3>
+              <div class="chip-list">
+                <span class="chip">Spring Boot</span>
+                <span class="chip">Spring MVC</span>
+                <span class="chip">Spring Data JPA</span>
+                <span class="chip">Spring Security</span>
+                <span class="chip">Node.js</span>
+                <span class="chip">React</span>
+                <span class="chip">REST APIs</span>
+                <span class="chip">GraphQL</span>
+                <span class="chip">Microservices</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal reveal--delay-2">
+              <h3>Data and distributed</h3>
+              <div class="chip-list">
+                <span class="chip">Apache Spark</span>
+                <span class="chip">Kafka</span>
+                <span class="chip">Hadoop</span>
+                <span class="chip">Airflow</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal">
+              <h3>Databases</h3>
+              <div class="chip-list">
+                <span class="chip">MySQL</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip">Oracle</span>
+                <span class="chip">MongoDB</span>
+                <span class="chip">Cassandra</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal reveal--delay-1">
+              <h3>Cloud and DevOps</h3>
+              <div class="chip-list">
+                <span class="chip">AWS</span>
+                <span class="chip">GCP</span>
+                <span class="chip">Azure</span>
+                <span class="chip">Docker</span>
+                <span class="chip">Kubernetes</span>
+                <span class="chip">Terraform</span>
+                <span class="chip">Jenkins</span>
+              </div>
+            </article>
+
+            <article class="skill-card reveal reveal--delay-2">
+              <h3>AI / ML</h3>
+              <div class="chip-list">
+                <span class="chip">RAG</span>
+                <span class="chip">Deep Agents</span>
+                <span class="chip">LangGraph</span>
+                <span class="chip">scikit-learn</span>
+                <span class="chip">PyTorch</span>
+                <span class="chip">MLOps</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section class="section" id="experience">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Experience</p>
+            <h2>Recent roles and delivery highlights</h2>
+            <p>
+              Experience across enterprise software, cloud-native platform delivery, research tooling,
+              and automotive simulation systems.
+            </p>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item reveal">
+              <div class="timeline-item__header">
+                <div>
+                  <p class="timeline-item__role">Software Engineer 3</p>
+                  <h3>Walmart</h3>
+                  <p class="timeline-item__location">Bentonville, AR</p>
+                </div>
+                <p class="timeline-item__date">May 2025 – Present</p>
+              </div>
+              <ul>
+                <li>Optimized high-volume Apache Spark jobs for event-driven international supply chain order workflows.</li>
+                <li>Improved production reliability through monitoring, incident response, root cause analysis, and fixes across application, database, and infrastructure layers.</li>
+                <li>Led Java and Spring Boot upgrades, platform migrations, and production validation across enterprise applications.</li>
+                <li>Improved engineering efficiency with automated tests, stronger alerting, best-practice documentation, and AI-assisted support tooling.</li>
+              </ul>
+            </article>
+
+            <article class="timeline-item reveal reveal--delay-1">
+              <div class="timeline-item__header">
+                <div>
+                  <p class="timeline-item__role">Software Developer</p>
+                  <h3>Arizona State University</h3>
+                  <p class="timeline-item__location">Tempe, AZ</p>
+                </div>
+                <p class="timeline-item__date">Jun 2024 – Mar 2025</p>
+              </div>
+              <ul>
+                <li>Built an event management social platform for 1,000+ users with QR code check-ins and co-hosting functionality.</li>
+                <li>Used React and Java Spring Boot to deliver a full-stack product experience for campus users.</li>
+                <li>Deployed and managed microservices on AWS with Kubernetes to improve scalability and reduce downtime.</li>
+                <li>Automated infrastructure with Terraform to speed up environment provisioning.</li>
+              </ul>
+            </article>
+
+            <article class="timeline-item reveal reveal--delay-2">
+              <div class="timeline-item__header">
+                <div>
+                  <p class="timeline-item__role">Graduate Research Assistant</p>
+                  <h3>Arizona State University</h3>
+                  <p class="timeline-item__location">Tempe, AZ</p>
+                </div>
+                <p class="timeline-item__date">Jan 2023 – May 2024</p>
+              </div>
+              <ul>
+                <li>Built and deployed a long-term load forecasting tool on AWS ECS using MLOps practices, Spring Boot APIs, and React dashboards.</li>
+                <li>Improved forecasting accuracy by 10% through applied modeling and productionized delivery workflows.</li>
+                <li>Contributed to a framework for detecting and mitigating load redistribution attacks to strengthen power grid security.</li>
+              </ul>
+            </article>
+
+            <article class="timeline-item reveal reveal--delay-3">
+              <div class="timeline-item__header">
+                <div>
+                  <p class="timeline-item__role">Systems Engineer</p>
+                  <h3>Tata Consultancy Services</h3>
+                  <p class="timeline-item__location">India</p>
+                </div>
+                <p class="timeline-item__date">Oct 2020 – Jul 2022</p>
+              </div>
+              <ul>
+                <li>Built React and Redux interfaces for a Software-in-Loop application used by 350+ users for automotive ADAS simulations.</li>
+                <li>Improved testing efficiency by 30% by making simulation execution and results analysis easier for users.</li>
+                <li>Automated build, test, and release workflows with Jenkins and AWS CodeDeploy to improve deployment efficiency.</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Work Section -->
+      <section class="section section--alt" id="work">
+        <div class="container">
+
+          <div class="section-heading reveal">
+            <p class="eyebrow">Featured Work</p>
+            <h2>What I've built</h2>
+            <p>
+              Highlights from enterprise supply chain systems, campus platforms, energy forecasting
+              research, and automotive simulation tooling.
+            </p>
+          </div>
+
+          <div class="work-grid">
+            <article class="work-card reveal">
+              <div class="work-card__top">
+                <p class="work-card__eyebrow">Walmart</p>
+                <h3>International supply chain event workflows</h3>
+              </div>
+              <p class="work-card__problem">
+                High-volume event-driven order creation workflows needed better efficiency,
+                observability, and production resilience.
+              </p>
+              <div class="chip-list chip-list--compact">
+                <span class="chip">Apache Spark</span>
+                <span class="chip">Java</span>
+                <span class="chip">Spring Boot</span>
+                <span class="chip">Monitoring</span>
+              </div>
+              <p>
+                Optimized Spark jobs, resolved reliability issues across the stack, and led platform
+                modernization through framework upgrades and migrations.
+              </p>
+              <p class="work-card__impact">
+                <strong>Impact:</strong> Improved processing efficiency and strengthened production
+                reliability for enterprise supply chain systems.
+              </p>
+
+              <!-- <a
+                class="button button--ghost button--inline"
+                href="#"
+                data-link-key="caseStudies.walmart"
+                data-placeholder="Optional: add a case study link in script.js"
+                data-filled-label="View case study"
+              >
+                Optional case study link
+              </a> -->
+            </article>
+
+            <article class="work-card reveal reveal--delay-1">
+              <div class="work-card__top">
+                <p class="work-card__eyebrow">Arizona State University</p>
+                <h3>Campus event management platform</h3>
+              </div>
+              <p class="work-card__problem">
+                Event coordination needed a smoother full-stack experience for hosting, check-ins, and
+                user engagement at campus scale.
+              </p>
+              <div class="chip-list chip-list--compact">
+                <span class="chip">React</span>
+                <span class="chip">Spring Boot</span>
+                <span class="chip">AWS</span>
+                <span class="chip">Kubernetes</span>
+                <span class="chip">Terraform</span>
+              </div>
+              <p>
+                Built an event management social platform with QR code check-ins and co-hosting, then
+                deployed microservices on AWS and automated infrastructure provisioning.
+              </p>
+              <p class="work-card__impact">
+                <strong>Impact:</strong> Supported 1,000+ users while improving scalability, reducing
+                downtime, and speeding up infrastructure setup.
+              </p>
+
+              <!-- <a
+                class="button button--ghost button--inline"
+                href="#"
+                data-link-key="caseStudies.asuPlatform"
+                data-placeholder="Optional: add a case study link in script.js"
+                data-filled-label="View case study"
+              >
+                Optional case study link
+              </a> -->
+            </article>
+
+            <article class="work-card reveal reveal--delay-2">
+              <div class="work-card__top">
+                <p class="work-card__eyebrow">Arizona State University</p>
+                <h3>Long-term load forecasting and grid security</h3>
+              </div>
+              <p class="work-card__problem">
+                Forecasting workflows and grid security research required accurate predictions,
+                deployment discipline, and clear operational visibility.
+              </p>
+              <div class="chip-list chip-list--compact">
+                <span class="chip">AWS ECS</span>
+                <span class="chip">Spring Boot</span>
+                <span class="chip">React</span>
+                <span class="chip">MLOps</span>
+              </div>
+              <p>
+                Built and deployed forecasting services and dashboards, while contributing to a
+                framework for detecting and mitigating load redistribution attacks.
+              </p>
+              <p class="work-card__impact">
+                <strong>Impact:</strong> Increased forecasting accuracy by 10% and helped reduce the
+                risk of large-scale power grid disruptions.
+              </p>
+
+              <!-- <a
+                class="button button--ghost button--inline"
+                href="#"
+                data-link-key="caseStudies.forecasting"
+                data-placeholder="Optional: add a case study link in script.js"
+                data-filled-label="View case study"
+              >
+                Optional case study link
+              </a> -->
+            </article>
+
+            <article class="work-card reveal reveal--delay-3">
+              <div class="work-card__top">
+                <p class="work-card__eyebrow">Tata Consultancy Services</p>
+                <h3>ADAS simulation platform</h3>
+              </div>
+              <p class="work-card__problem">
+                Automotive teams needed faster simulation workflows and better release automation for
+                ADAS validation.
+              </p>
+              <div class="chip-list chip-list--compact">
+                <span class="chip">React</span>
+                <span class="chip">Redux</span>
+                <span class="chip">Jenkins</span>
+                <span class="chip">AWS CodeDeploy</span>
+              </div>
+              <p>
+                Built simulation interfaces for 350+ users and automated build, test, and release
+                pipelines to streamline delivery.
+              </p>
+              <p class="work-card__impact">
+                <strong>Impact:</strong> Improved automotive ADAS testing efficiency by 30% and made
+                releases more efficient.
+              </p>
+
+              <!-- <a
+                class="button button--ghost button--inline"
+                href="#"
+                data-link-key="caseStudies.adas"
+                data-placeholder="Optional: add a case study link in script.js"
+                data-filled-label="View case study"
+              >
+                Optional case study link
+              </a> -->
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section class="section" id="certifications">
+        <div class="container">
+
+          <div class="section-heading reveal">
+            <p class="eyebrow">Certifications</p>
+            <h2>Certified across cloud, infrastructure, and data</h2>
+            <p>
+              Hands-on credentials across Kubernetes, Terraform, AWS, GCP, and Snowflake.
+            </p>
+          </div>
+
+          <div class="cert-grid">
+            <a
+              class="cert-card reveal"
+              href="https://www.credly.com/badges/7912f50a-b424-4805-88ea-6f329ff8ee99/linked_in_profile"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="cert-card__label">Kubernetes</span>
+              <h3>Certified Kubernetes Administrator</h3>
+              <span class="cert-card__meta">View badge</span>
+            </a>
+
+            <a
+              class="cert-card reveal reveal--delay-1"
+              href="https://www.credly.com/badges/e8677ed3-a8a3-41e6-bb35-0aaef0ba4377/linked_in_profile"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="cert-card__label">Terraform</span>
+              <h3>HashiCorp Certified Terraform Associate</h3>
+              <span class="cert-card__meta">View badge</span>
+            </a>
+
+            <a
+              class="cert-card reveal reveal--delay-2"
+              href="https://www.credly.com/badges/fdc420cc-dd11-40df-aa88-f5aa4e90e600"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="cert-card__label">AWS</span>
+              <h3>AWS Certified Developer – Associate</h3>
+              <span class="cert-card__meta">View badge</span>
+            </a>
+
+            <a
+              class="cert-card reveal reveal--delay-3"
+              href="https://www.credly.com/badges/8e5e8d26-974b-4a61-af26-43ef829bcb70/linked_in_profile"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="cert-card__label">AWS</span>
+              <h3>AWS Certified Solutions Architect – Associate</h3>
+              <span class="cert-card__meta">View badge</span>
+            </a>
+
+            <a
+              class="cert-card reveal"
+              href="https://www.credly.com/badges/4b6c6850-ea1a-4a30-8015-1f8bc03c445c/linked_in_profile"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="cert-card__label">AWS</span>
+              <h3>AWS Certified Cloud Practitioner</h3>
+              <span class="cert-card__meta">View badge</span>
+            </a>
+
+            <a
+              class="cert-card reveal reveal--delay-1"
+              href="https://www.credly.com/badges/f926f557-5f63-49d7-9e45-7d8463f45acc/public_url"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="cert-card__label">GCP</span>
+              <h3>GCP Associate Cloud Engineer</h3>
+              <span class="cert-card__meta">View badge</span>
+            </a>
+
+            <a
+              class="cert-card reveal reveal--delay-2"
+              href="https://achieve.snowflake.com/353bdb04-eebd-407f-a457-e2f49c565442?utm_source=linkedin&amp;utm_medium=social"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span class="cert-card__label">Snowflake</span>
+              <h3>Snowflake SnowPro Core</h3>
+              <span class="cert-card__meta">View credential</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section class="section section--alt" id="education">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Education</p>
+            <h2>Academic foundation</h2>
+            <p>
+              Graduate training in computer engineering with earlier foundations in electrical and
+              electronics engineering.
+            </p>
+          </div>
+
+          <div class="education-grid">
+            <article class="education-card reveal">
+              <p class="education-card__label">Master of Science</p>
+              <h3>Computer Engineering (Computer Systems)</h3>
+              <p>Arizona State University · Tempe, AZ</p>
+              <span>Aug 2022 – May 2024</span>
+            </article>
+
+            <article class="education-card reveal reveal--delay-1">
+              <p class="education-card__label">Bachelor of Technology</p>
+              <h3>Electrical and Electronics Engineering</h3>
+              <p>JNTUH College of Engineering · Hyderabad, India</p>
+              <span>Jun 2016 – May 2020</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s connect</h2>
+            <p>
+              Reach out for software engineering, backend, cloud, full stack, or platform roles.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-panel reveal">
+              <div class="contact-methods">
+                <a class="contact-method" href="mailto:avinashkodali45@gmail.com">
+                  <span class="contact-method__label">Email</span>
+                  <strong>avinashkodali45@gmail.com</strong>
+                </a>
+
+                <a class="contact-method" href="tel:+16232653810">
+                  <span class="contact-method__label">Phone</span>
+                  <strong>623-265-3810</strong>
+                </a>
+
+                <a
+                  class="contact-method"
+                  href="#"
+                  data-link-key="linkedinUrl"
+                  data-placeholder="Add your LinkedIn URL in script.js"
+                  data-filled-label="Open LinkedIn profile"
+                >
+                  <span class="contact-method__label">LinkedIn</span>
+                  <strong>Add your LinkedIn URL in script.js</strong>
+                </a>
+
+                <a
+                  class="contact-method"
+                  href="#"
+                  data-link-key="githubUrl"
+                  data-placeholder="Add your GitHub URL in script.js"
+                  data-filled-label="Open GitHub profile"
+                >
+                  <span class="contact-method__label">GitHub</span>
+                  <strong>Add your GitHub URL in script.js</strong>
+                </a>
+
+                <a
+                  class="contact-method"
+                  href="#"
+                  data-link-key="resumeUrl"
+                  data-placeholder="Add your resume PDF path in script.js"
+                  data-filled-label="Open resume"
+                >
+                  <span class="contact-method__label">Resume</span>
+                  <strong>Add your resume PDF path in script.js</strong>
+                </a>
+              </div>
+            </div>
+
+            <div class="form-panel reveal reveal--delay-1">
+              <form id="contact-form" novalidate>
+                <div class="form-row">
+                  <div class="form-field">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" placeholder="Your name" />
+                  </div>
+                  <div class="form-field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="your@email.com" />
+                  </div>
+                </div>
+
+                <div class="form-field">
+                  <label for="subject">Subject</label>
+                  <input id="subject" name="subject" type="text" placeholder="How can I help?" />
+                </div>
+
+                <div class="form-field">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell me a bit about the role, team, or project."
+                  ></textarea>
+                </div>
+
+                <button class="button button--primary" type="submit">Send message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer__inner">
+        <div>
+          <p class="footer__name">Avinash Kodali</p>
+          <p class="footer__text">Full Stack Software Engineer focused on backend, cloud, and platform engineering.</p>
+        </div>
+        <div class="footer__meta">
+          <p>© <span id="year"></span> Avinash Kodali</p>
+        </div>
       </div>
-    </section><!-- End About Section -->
+    </footer>
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>I have acquired skills in J2EE, Spring Framework, MERN Stack development, AWS Cloud services, and Machine
-            Learning, demonstrating my capability in building full-stack applications, deploying scalable cloud
-            solutions, and implementing machine learning algorithms.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">J2EE <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Spring Framework <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">NODE JS <i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">REACT JS<i class="val">70%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">AMAZON WEB SERVICES (AWS) <i class="val">75%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">MACHINE LEARNING <i class="val">80%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>Computer Engineering student with 3 years of experience in driving software quality through testing and
-            automation. Developed skills in web development, cloud platforms, and machine learning.</p>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Avinash Kodali</h4>
-              <p><em>Innovative and deadline-oriented Software Developer with over 3 years of experience in crafting and
-                  deploying user-centric, robust software solutions.</em></p>
-              <ul>
-                <li>Arizona, USA</li>
-                <li>+1 (623) 265 3810</li>
-                <li>avinashkodali45@gmail.com</li>
-              </ul>
-            </div>
-
-            <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Science Computer Engineering (Computer Systems)</h4>
-              <h5>Aug 2022 - May 2024</h5>
-              <p><em>Arizona State University, Tempe, AZ, USA</em></p>
-              <p>Relevant Coursework:</p>
-              <ul>
-                <li>Foundations of Algorithms</li>
-                <li>Statistical Machine Learning</li>
-                <li>Data Mining</li>
-                <li>Knowledge Representation and Reasoning</li>
-                <li>Data Processing at Scale</li>
-                <li>Cloud Computing</li>
-                <li>Mobile Computing</li>
-                <li>Software Verification, Validation, and Testing</li>
-                <li>Python for Rapid Engineering Solutions</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Technology Electrical and Electronics Engineering</h4>
-              <h5>Jun 2016 - May 2020</h5>
-              <p><em>JNTUH College of Engineering, Hyderabad, India</em></p>
-            </div>
-            <h3 class="resume-title">Extracurricular Experience</h3>
-            <div class="resume-item">
-              <h4>Team Member</h4>
-              <h5>Jan 2023 - Present</h5>
-              <p><em>Code Devils, Tempe, AZ, USA </em></p>
-              <ul>
-                <li>Organized weekly meetings focused on key topics in Computer Science and Software Engineering,
-                  covering 20 different topics in essential industry areas like artificial intelligence, cloud computing
-                  and distributed systems.</li>
-              </ul>
-            </div>
-            <h3 class="resume-title">Certifications</h3>
-            <div class="resume-item">
-              <ul>
-                <li><a href="https://www.credly.com/badges/7912f50a-b424-4805-88ea-6f329ff8ee99/linked_in_profile" target="_blank" style="color:black;">Certified Kubernetes Administrator (CKA)</a></li>
-                <li><a href="https://www.credly.com/badges/8e5e8d26-974b-4a61-af26-43ef829bcb70/linked_in_profile" target="_blank" style="color:black;">AWS Certified Solutions Architect – Associate</a></li>
-                <li><a href="https://www.credly.com/badges/4b6c6850-ea1a-4a30-8015-1f8bc03c445c/linked_in_profile" target="_blank" style="color:black;">AWS Certified Cloud Practitioner</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Full Stack Developer</h4>
-              <h5>Aug 2024 - Present</h5>
-              <p><em>EPICS at ASU, Tempe, AZ, USA </em></p>
-              <ul>
-                <li>Led the design and development of an event-planning social media platform for 1,000+ users, using React for seamless user interactions and Java Spring Boot for scalable back-end services.</li>
-                <li>Deployed and managed several microservices on AWS Cloud with Kubernetes, enhancing scalability by 30% and reducing downtime by 15%. Automated infrastructure with Terraform, cutting provisioning time by 40%.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Graduate Research Assistant</h4>
-              <h5>Aug 2022 - May 2024</h5>
-              <p><em>Arizona State University, Tempe, AZ, USA </em></p>
-              <ul>
-                <li>Created and deployed a long-term load forecasting tool on AWS ECS, leveraging MLOps practices,
-                  Spring Boot for API development, and React for interactive dashboards, resulting in a 10% increase in
-                  forecasting accuracy. </li>
-                <li>Engineered a framework in collaboration with the Israel-United States Binational Industrial Research
-                  and Development Foundation to detect and mitigate load redistribution attacks, enhancing power grid
-                  security by 30% and significantly reducing the risk of large-scale disruptions. </li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Full Stack Java Developer</h4>
-              <h5>Oct 2020 - Jul 2022</h5>
-              <p><em>Tata Consultancy Services, Pune, India</em></p>
-              <ul>
-                <li>Developed user interfaces using React and Redux for a Software-in-Loop application, enabling over
-                  350 users to efficiently run simulations and analyze results for automotive ADAS features, enhancing
-                  testing efficiency by 30%.</li>
-                <li>Built and maintained scalable back-end APIs using Spring and integrated MySQL databases with
-                  Hibernate ORM, improving system performance for complex simulation workflows by 20%.</li>
-                <li> Implemented comprehensive unit and integration tests with JUnit and Mockito, leading to a 30%
-                  decrease in bugs and a 25% enhancement in code quality and maintainability.</li>
-                <li>Automated the build, test, and release processes using CI/CD pipelines with Jenkins and AWS
-                  CodeDeploy, resulting in a 40% increase in overall deployment efficiency.</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Associate Software Engineer Intern</h4>
-              <h5>May 2019 - Sep 2020</h5>
-              <p><em>Tata Consultancy Services, Pune, India</em></p>
-              <ul>
-                <li>Developed RESTful APIs using Spring Boot to retrieve real-time data for flights, hotels, and other
-                  travel services, significantly enhancing data accessibility and improving system responsiveness.</li>
-                <li>Implemented data caching mechanisms using Redis to optimize API performance and reduce server load,
-                  achieving a 25% decrease in response times and enhancing overall user experience. </li>
-                <li>Authored comprehensive API documentation using Swagger, facilitating seamless integration and
-                  usability for developers, which improved team collaboration and reduced onboarding time by 20%. </li>
-              </ul>
-            </div>
-            
-          </div>
-        </div>
-        <a href="https://drive.google.com/file/d/1RLUhCEeF2xzl74HrQoVq0Lgxst2gp7HX/view?usp=drive_link" target="_blank"
-          download>
-          <button type="button" class="btn btn-primary" data-aos="fade-up">Download Resume</button>
-        </a>
-      </div>
-    </section><!-- End Resume Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p> I've carefully curated a collection of completed projects, offering a glimpse into the diverse range of my
-            work. Dive into each project to discover the innovative solutions and skills showcased, providing valuable
-            insights into my capabilities and expertise.</p>
-        </div>
-
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100"> <!-- portfolio-container -->
-
-          <!-- <div class="col-lg-4 col-md-6 card ">
-              <a href="https://github.com/avinashkodali/MS-Projects/tree/master/CSE%20535%20Mobile%20Computing%20-%20Context%20Monitoring%20Application" target="_blank"><img class="card-img-top" src="assets/img/portfolio/mobile-context-monitoring-application-img.png" alt="Card image cap"  width="300rem" height="300rem"></a>
-              <div class="card-body">
-                <h5 class="card-title">Mobile Context Monitoring Application</h5>
-                <p class="card-text" style="text-align: justify;">Developed an Android health app utilizing innovative smartphone features for accurate heart rate and respiratory monitoring. We integrated a user-friendly interface with a database for efficient symptom tracking.</p>
-                  <a href="https://github.com/avinashkodali/MS-Projects/tree/master/CSE%20535%20Mobile%20Computing%20-%20Context%20Monitoring%20Application"><i class="fa fa-github" style="font-size:36px;color: black;"></i></a> 
-                  <a href="#" class="btn btn-primary">Go somewhere</a> 
-              </div>
-            </div>  -->
-          <div class="col-lg-4 col-md-6 card ">
-            <a href="https://github.com/avinashkodali/Machine-Learning-Projects/tree/master/%5B10-13-2023%5D%20SQLInteract%20Text%20To%20SQL%20App"
-              target="_blank"><img class="card-img-top" src="assets/img/portfolio/sql-interact-img.png"
-                alt="Card image cap" width="300rem" height="300rem"></a>
-            <div class="card-body">
-              <h5 class="card-title">SQL Interact: Text to SQL LLM App</h5>
-              <p class="card-text" style="text-align: justify;">SQLInteract is an application designed to simplify the
-                querying process for users who may not be familiar with SQL syntax but need to interact with databases.
-                It allows users to input natural language questions related to database queries and translates them into
-                SQL queries to fetch the information from the database.</p>
-              <!-- <a href="https://github.com/avinashkodali/MS-Projects/tree/master/CSE%20535%20Mobile%20Computing%20-%20Context%20Monitoring%20Application"><i class="fa fa-github" style="font-size:36px;color: black;"></i></a> -->
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-          <!-- <div class="col-lg-4 col-md-6 card"  >
-              <a href="https://github.com/avinashkodali/MS-Projects/tree/master/CSE%20572%20Data%20Mining%20-%20Artificial%20Pancreas" target="_blank"><img class="card-img-top" src="assets/img/portfolio/artificial-pancreas-img.png" alt="Card image cap"  width="300rem" height="300rem"></a>
-              <div class="card-body">
-                <h5 class="card-title">Artificial Pancreas Medtronic 670G Data</h5>
-                <p class="card-text" style="text-align: justify;">Through time series analysis, precise meal classification employing decision tree algorithms, and insightful clustering techniques like K-means and DBSCAN, we derived critical insights on glucose control, identifying meal patterns accurately, and shedding light on dietary behaviors and trends.</p>
-                <a href="https://github.com/avinashkodali/MS-Projects/tree/master/CSE%20572%20Data%20Mining%20-%20Artificial%20Pancreas"><i class="fa fa-github" style="font-size:36px;color: black;"></i></a>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div> -->
-          <div class="col-lg-4 col-md-6 card ">
-            <a href="https://github.com/avinashkodali/Web-Development-Projects/tree/master/19_E-Commerce"
-              target="_blank"><img class="card-img-top" src="assets/img/portfolio/retail-rush-img.png"
-                alt="Card image cap" width="300rem" height="300rem"></a>
-            <div class="card-body">
-              <h5 class="card-title">Retail Rush: E-Commerce Website</h5>
-              <p class="card-text" style="text-align: justify;">Developed a full-stack e-commerce application featuring
-                over 100 product listings, secure payment processing, user authentication via email/password, and
-                shopping cart for a seamless user experience. Enhanced the application availability by deploying on
-                Amazon Web Services (AWS).</p>
-              <!-- <a href="https://github.com/avinashkodali/MS-Projects/tree/master/CSE%20535%20Mobile%20Computing%20-%20Context%20Monitoring%20Application"><i class="fa fa-github" style="font-size:36px;color: black;"></i></a> -->
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 card"> <!--   portfolio-item -->
-            <a href="https://github.com/avinashkodali/MS-Projects/tree/master/CSE%20546%20Cloud%20Computing%20-%20Elastic%20Image%20Recognition%20Service%20on%20AWS"
-              target="_blank"><img class="card-img-top" src="assets/img/portfolio/elastic-image-recognition-img.png "
-                alt="Card image cap" width="300rem" height="300rem"></a>
-            <div class="card-body">
-              <h5 class="card-title">Elastic Image Recognition Service</h5>
-              <p class="card-text" style="text-align: justify;">Implemented an elastic image recognition application on
-                AWS, showcasing precise image classification using a RESNet-trained machine learning model. Leveraging
-                AWS SQS for automatic scaling, the application demonstrated remarkable efficiency and responsiveness by
-                processing a workload of 100 images in just around 5 minutes.</p>
-              <!-- <a href="https://github.com/avinashkodali/MS-Projects/tree/master/CSE%20546%20Cloud%20Computing%20-%20Elastic%20Image%20Recognition%20Service%20on%20AWS"><i class="fa fa-github" style="font-size:36px;color: black;"></i></a> -->
-              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section><!-- End Portfolio Section -->
-
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p> Let's join forces and craft something remarkable together! 🌟 I'm eagerly anticipating your message—let's
-            bring your vision to life. Reach out, and let's make something amazing happen! 🚀</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Chandler, Arizona, AZ 85286</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>avinashkodali45@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 (623) 265 3810</p>
-              </div>
-              <iframe width="100%" height="290" style="border:0" loading="lazy" allowfullscreen
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3335.6725748353933!2d-111.88463212460077!3d33.275063258367794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b00f2c1b9f819%3A0x30ef7c5351f76d88!2s2255%20W%20Germann%20Rd%2C%20Chandler%2C%20AZ%2085286!5e0!3m2!1sen!2sus!4v1699937749229!5m2!1sen!2sus"></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="mailto:avinashkodali45@gmail.com" method="post" role="form" enctype="text/plain">
-              <!-- class="php-email-form" action="forms/contact.php" -->
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <!-- <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div> -->
-              <div class="text-center" style="margin-top: 1rem;"><button class="btn btn-primary" type="submit">Send
-                  Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
