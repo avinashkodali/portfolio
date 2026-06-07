@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Avinash Kodali | Software Engineer III @ Walmart</title>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--bg:#080d1a;--bg2:#0d1525;--bg3:#111d30;--cyan:#00e5ff;--purple:#a855f7;--pink:#f472b6;--text:#e2e8f0;--muted:#64748b;--border:#1e3a5f;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;overflow-x:hidden;}
+a{color:var(--cyan);text-decoration:none;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(8,13,26,0.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:60px;}
+.logo{font-family:'JetBrains Mono',monospace;font-size:1.1rem;color:var(--cyan);font-weight:700;}
+.logo span{color:var(--purple);}
+nav ul{list-style:none;display:flex;gap:1.5rem;}
+nav ul li a{font-size:.82rem;color:var(--muted);letter-spacing:.05em;text-transform:uppercase;transition:color .2s;}
+nav ul li a:hover{color:var(--cyan);}
+.nav-resume{background:transparent;border:1px solid var(--cyan);color:var(--cyan);padding:6px 16px;border-radius:4px;font-size:.8rem;cursor:pointer;font-family:'Inter',sans-serif;transition:all .2s;}
+.nav-resume:hover{background:var(--cyan);color:var(--bg);}
+
+#hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:80px 2rem 2rem;position:relative;overflow:hidden;}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(0,229,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(0,229,255,.03) 1px,transparent 1px);background-size:60px 60px;}
+.hero-glow{position:absolute;top:20%;left:50%;transform:translateX(-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(168,85,247,.08) 0%,transparent 70%);pointer-events:none;}
+.hero-content{position:relative;max-width:960px;width:100%;}
+.hero-terminal{font-family:'JetBrains Mono',monospace;font-size:.8rem;color:var(--muted);margin-bottom:1.5rem;}
+.hero-terminal .prompt{color:var(--cyan);}
+.hero-terminal .cmd{color:var(--purple);}
+h1{font-size:clamp(2.5rem,6vw,5rem);font-weight:800;line-height:1.05;margin-bottom:.75rem;}
+h1 .cyan{color:var(--cyan);}
+.hero-title2{font-size:clamp(1rem,2vw,1.25rem);font-weight:500;color:var(--muted);margin-bottom:1rem;font-family:'JetBrains Mono',monospace;}
+.hero-title2 span{color:var(--purple);}
+.hero-sub{font-size:1rem;color:var(--muted);max-width:660px;line-height:1.75;margin-bottom:2rem;}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:2.5rem;}
+.tag{font-family:'JetBrains Mono',monospace;font-size:.72rem;padding:4px 12px;border-radius:3px;border:1px solid;animation:tagpulse 3s ease-in-out infinite;}
+.tag.c{border-color:var(--cyan);color:var(--cyan);}
+.tag.p{border-color:var(--purple);color:var(--purple);animation-delay:.5s;}
+.tag.k{border-color:var(--pink);color:var(--pink);animation-delay:1s;}
+@keyframes tagpulse{0%,100%{opacity:.6}50%{opacity:1}}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
+.btn-primary{background:var(--cyan);color:var(--bg);padding:12px 28px;border-radius:4px;font-weight:700;font-size:.9rem;transition:all .2s;border:none;cursor:pointer;font-family:'Inter',sans-serif;}
+.btn-primary:hover{background:#33eaff;transform:translateY(-1px);}
+.btn-outline{border:1px solid var(--purple);color:var(--purple);padding:12px 28px;border-radius:4px;font-weight:600;font-size:.9rem;transition:all .2s;}
+.btn-outline:hover{background:rgba(168,85,247,.1);}
+
+#stats{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:3rem 2rem;}
+.stats-grid{max-width:960px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:2rem;}
+.stat-item{text-align:center;}
+.stat-num{font-size:2.2rem;font-weight:800;font-family:'JetBrains Mono',monospace;background:linear-gradient(135deg,var(--cyan),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.stat-label{font-size:.75rem;color:var(--muted);margin-top:4px;letter-spacing:.05em;line-height:1.4;}
+
+section{padding:5rem 2rem;}
+.section-inner{max-width:960px;margin:0 auto;}
+.section-label{font-family:'JetBrains Mono',monospace;font-size:.75rem;color:var(--cyan);letter-spacing:.15em;text-transform:uppercase;margin-bottom:.4rem;}
+.section-title{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;margin-bottom:.75rem;}
+.section-title span{color:var(--cyan);}
+.section-divider{width:60px;height:2px;background:linear-gradient(90deg,var(--cyan),var(--purple));margin-bottom:3rem;}
+
+#about{background:var(--bg);}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;}
+.about-text{color:var(--muted);line-height:1.8;font-size:.92rem;}
+.about-text p{margin-bottom:1rem;}
+.about-text strong{color:var(--text);}
+.target-role{margin-top:1.5rem;background:rgba(0,229,255,.05);border:1px solid rgba(0,229,255,.2);border-radius:8px;padding:1rem;}
+.target-role p{font-size:.8rem;font-family:'JetBrains Mono',monospace;color:var(--cyan);margin:0;line-height:1.6;}
+.about-pillars{display:flex;flex-direction:column;gap:1rem;}
+.pillar{background:var(--bg2);border:1px solid var(--border);border-left:3px solid var(--cyan);padding:1rem 1.25rem;border-radius:0 8px 8px 0;}
+.pillar.p2{border-left-color:var(--purple);}
+.pillar.p3{border-left-color:var(--pink);}
+.pillar h4{font-size:.88rem;font-weight:600;margin-bottom:.3rem;}
+.pillar p{font-size:.78rem;color:var(--muted);line-height:1.6;}
+
+#skills{background:var(--bg2);}
+.skills-cats{display:flex;flex-direction:column;gap:1.5rem;}
+.skill-cat h4{font-family:'JetBrains Mono',monospace;font-size:.72rem;color:var(--purple);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.6rem;}
+.skill-tags{display:flex;flex-wrap:wrap;gap:8px;}
+.skill-pill{background:var(--bg3);border:1px solid var(--border);color:var(--text);font-size:.75rem;padding:5px 14px;border-radius:20px;font-family:'JetBrains Mono',monospace;transition:all .2s;cursor:default;}
+.skill-pill:hover{border-color:var(--cyan);color:var(--cyan);background:rgba(0,229,255,.05);}
+
+#experience{background:var(--bg);}
+.timeline{position:relative;padding-left:2rem;}
+.timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:1px;background:linear-gradient(to bottom,var(--cyan),var(--purple),transparent);}
+.tl-item{position:relative;margin-bottom:3rem;}
+.tl-dot{position:absolute;left:-2.35rem;top:.35rem;width:12px;height:12px;border-radius:50%;border:2px solid var(--cyan);background:var(--bg);}
+.tl-item:nth-child(2) .tl-dot{border-color:var(--purple);}
+.tl-item:nth-child(3) .tl-dot{border-color:var(--pink);}
+.tl-item:nth-child(4) .tl-dot{border-color:var(--cyan);}
+.tl-header{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:.5rem;margin-bottom:.5rem;}
+.tl-role{font-size:1rem;font-weight:700;}
+.tl-company{color:var(--cyan);font-weight:600;font-size:.88rem;margin-bottom:.2rem;}
+.tl-item:nth-child(2) .tl-company{color:var(--purple);}
+.tl-item:nth-child(3) .tl-company{color:var(--pink);}
+.tl-date{font-family:'JetBrains Mono',monospace;font-size:.7rem;color:var(--muted);background:var(--bg2);border:1px solid var(--border);padding:3px 10px;border-radius:3px;white-space:nowrap;}
+.tl-loc{font-size:.78rem;color:var(--muted);margin-bottom:.75rem;}
+.tl-bullets{list-style:none;display:flex;flex-direction:column;gap:.5rem;}
+.tl-bullets li{font-size:.84rem;color:var(--muted);padding-left:1.2rem;position:relative;line-height:1.65;}
+.tl-bullets li::before{content:'▸';position:absolute;left:0;color:var(--cyan);}
+.metric{color:var(--cyan);font-weight:700;font-family:'JetBrains Mono',monospace;}
+.tl-project{margin-top:1.25rem;background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1rem 1.25rem;}
+.tl-project-label{font-size:.68rem;font-family:'JetBrains Mono',monospace;color:var(--purple);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.35rem;}
+.tl-item:nth-child(2) .tl-project-label{color:var(--cyan);}
+.tl-item:nth-child(3) .tl-project-label{color:var(--pink);}
+.tl-project-title{font-size:.9rem;font-weight:700;margin-bottom:.4rem;}
+.tl-project-desc{font-size:.8rem;color:var(--muted);line-height:1.6;margin-bottom:.75rem;}
+.tl-stack{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:.75rem;}
+.tl-stack span{font-family:'JetBrains Mono',monospace;font-size:.63rem;background:var(--bg);border:1px solid var(--border);color:var(--muted);padding:2px 8px;border-radius:3px;}
+.tl-metrics{display:flex;flex-wrap:wrap;gap:8px;}
+.tl-metric-pill{background:rgba(0,229,255,.07);border:1px solid rgba(0,229,255,.2);color:var(--cyan);font-family:'JetBrains Mono',monospace;font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:4px;}
+
+#certifications{background:var(--bg);}
+.certs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1rem;}
+.cert-card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.2rem;transition:all .2s;display:flex;flex-direction:column;gap:.4rem;}
+.cert-card:hover{border-color:var(--purple);transform:translateY(-2px);}
+.cert-issuer{font-size:.68rem;font-family:'JetBrains Mono',monospace;color:var(--purple);letter-spacing:.1em;text-transform:uppercase;}
+.cert-name{font-size:.85rem;font-weight:600;line-height:1.4;}
+.cert-badge{display:inline-flex;align-items:center;gap:4px;font-size:.7rem;color:var(--cyan);border:1px solid rgba(0,229,255,.3);padding:2px 8px;border-radius:3px;width:fit-content;margin-top:auto;}
+
+#education{background:var(--bg2);}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+.edu-card{background:var(--bg);border:1px solid var(--border);border-radius:10px;padding:1.5rem;}
+.edu-degree{font-size:.72rem;color:var(--cyan);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.08em;margin-bottom:.3rem;}
+.edu-field{font-size:.98rem;font-weight:700;margin-bottom:.3rem;}
+.edu-school{font-size:.85rem;color:var(--purple);margin-bottom:.25rem;}
+.edu-detail{font-size:.76rem;color:var(--muted);}
+
+#contact{background:var(--bg);}
+.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;}
+.contact-links{display:flex;flex-direction:column;gap:.75rem;}
+.contact-link{display:flex;align-items:center;gap:.75rem;padding:.75rem 1rem;background:var(--bg2);border:1px solid var(--border);border-radius:8px;transition:all .2s;color:var(--text);}
+.contact-link:hover{border-color:var(--cyan);color:var(--cyan);}
+.cli{width:32px;height:32px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:700;font-family:'JetBrains Mono',monospace;flex-shrink:0;}
+.ci-e{background:rgba(0,229,255,.1);color:var(--cyan);}
+.ci-p{background:rgba(168,85,247,.1);color:var(--purple);}
+.ci-g{background:rgba(244,114,182,.1);color:var(--pink);}
+.ci-l{background:rgba(0,119,181,.1);color:#4fa3e0;}
+.contact-form{display:flex;flex-direction:column;gap:.75rem;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:.75rem;}
+.form-input{background:var(--bg2);border:1px solid var(--border);color:var(--text);padding:.7rem 1rem;border-radius:6px;font-size:.84rem;font-family:'Inter',sans-serif;outline:none;transition:border-color .2s;width:100%;}
+.form-input:focus{border-color:var(--cyan);}
+.form-input::placeholder{color:var(--muted);}
+textarea.form-input{resize:vertical;min-height:100px;}
+.btn-send{background:linear-gradient(135deg,var(--cyan),var(--purple));color:var(--bg);padding:12px 28px;border-radius:6px;font-weight:700;font-size:.9rem;border:none;cursor:pointer;transition:opacity .2s;font-family:'Inter',sans-serif;}
+.btn-send:hover{opacity:.85;}
+
+footer{background:var(--bg2);border-top:1px solid var(--border);padding:1.5rem 2rem;text-align:center;font-size:.78rem;color:var(--muted);}
+footer span{color:var(--cyan);}
+
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.visible{opacity:1;transform:none;}
+
+@media(max-width:700px){
+  nav ul{display:none;}
+  .about-grid,.edu-grid,.contact-layout{grid-template-columns:1fr;}
+  .projects-grid{grid-template-columns:1fr;}
+  .form-row{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">&lt;<span>AK</span> /&gt;</div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a class="nav-resume" href="https://drive.google.com/file/d/1u5_QNphfvy6_47h24ve4rV3rwnXu9qd8/view?usp=sharing" target="_blank">Resume ↗</a>
+</nav>
+
+<section id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-terminal"><span class="prompt">~/portfolio</span> <span class="cmd">$ whoami</span></div>
+    <h1>Avinash <span class="cyan">Kodali.</span></h1>
+    <div class="hero-title2">Software Engineer III <span>@ Walmart Global Tech</span></div>
+    <p class="hero-sub">Building reliable cloud-native APIs, microservices, and web apps at scale — handling millions of orders a day. Fast backends. Clean frontends. Production-grade everything.</p>
+    <div class="hero-tags">
+      <span class="tag c">Java · Spring Boot</span>
+      <span class="tag p">AWS · Kubernetes · GCP</span>
+      <span class="tag k">React · TypeScript</span>
+      <span class="tag c">Apache Spark</span>
+      <span class="tag p">Terraform · Microservices</span>
+    </div>
+    <div class="hero-btns">
+      <button class="btn-primary" onclick="document.getElementById('work').scrollIntoView({behavior:'smooth'})">View My Work</button>
+      <a class="btn-outline" href="#contact">Get In Touch</a>
+    </div>
+  </div>
+</section>
+
+<div id="stats">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <div class="stat-num">10–30%</div>
+      <div class="stat-label">Spark Job Runtime Cut<br>@ Walmart</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num">25–40%</div>
+      <div class="stat-label">Production Incidents Reduced<br>@ Walmart</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num">1,000+</div>
+      <div class="stat-label">Users on Event Platform<br>@ ASU</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num">90%</div>
+      <div class="stat-label">Grid Attack Detection<br>Accuracy</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num">30%</div>
+      <div class="stat-label">ADAS Testing Efficiency<br>Gain @ TCS</div>
+    </div>
+    <div class="stat-item reveal">
+      <div class="stat-num">7</div>
+      <div class="stat-label">Cloud &amp; Platform<br>Certifications</div>
+    </div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="section-inner">
+    <div class="section-label">01 // About</div>
+    <h2 class="section-title">Backend-first engineering<br><span>with product-minded execution</span></h2>
+    <div class="section-divider"></div>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>I build cloud-native services that stay reliable under real load — the kind handling <strong>millions of orders a day</strong>. My focus is full-stack work where the backend has to be fast and fault-tolerant, and the frontend has to be clean.</p>
+        <p>Over 4+ years I've shipped microservices, backend platforms, and modern web apps using <strong>Java, Spring Boot, React, and TypeScript</strong>, deployed on AWS and GCP with Kubernetes and Terraform.</p>
+        <p>At <strong>Walmart Global Tech</strong> I work on international supply chain systems — optimizing high-volume Apache Spark jobs, modernizing event-driven services, and improving production reliability through root-cause analysis and AI-assisted support tooling.</p>
+        <p>Before Walmart: built an event management platform used by <strong>1,000+ people at ASU</strong>, contributed to grid-security research for the Israel–US Binational Industrial R&D Foundation, and at TCS delivered automotive ADAS simulation tooling adopted by <strong>350+ engineers</strong> that cut testing time by 30%.</p>
+        <div class="target-role">
+          <p>// Targeting: Senior Full Stack Engineer roles — owning APIs and microservices end-to-end, building user-facing features, modernizing legacy services, and raising reliability in cloud-native environments.</p>
+        </div>
+      </div>
+      <div class="about-pillars">
+        <div class="pillar">
+          <h4>Distributed Systems</h4>
+          <p>Backend workflows with Java, Spring Boot, Apache Spark, microservices, and event-driven architectures at enterprise scale.</p>
+        </div>
+        <div class="pillar p2">
+          <h4>Cloud &amp; Platform</h4>
+          <p>Deployed on AWS, GCP, ECS, and Kubernetes while automating infrastructure with Terraform and improving release workflows.</p>
+        </div>
+        <div class="pillar p3">
+          <h4>Reliability &amp; Delivery</h4>
+          <p>Monitoring, alerting, root-cause analysis, incident response, AI-assisted tooling, and engineering documentation in production.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-label">02 // Skills</div>
+    <h2 class="section-title">Tech stack &amp; <span>engineering breadth</span></h2>
+    <div class="section-divider"></div>
+    <div class="skills-cats reveal">
+      <div class="skill-cat">
+        <h4>Languages</h4>
+        <div class="skill-tags">
+          <span class="skill-pill">Java</span><span class="skill-pill">Python</span><span class="skill-pill">JavaScript</span><span class="skill-pill">TypeScript</span><span class="skill-pill">SQL</span><span class="skill-pill">Linux</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h4>Web &amp; Backend</h4>
+        <div class="skill-tags">
+          <span class="skill-pill">Spring Boot</span><span class="skill-pill">Spring MVC</span><span class="skill-pill">Spring Data JPA</span><span class="skill-pill">Spring Security</span><span class="skill-pill">Node.js</span><span class="skill-pill">React</span><span class="skill-pill">Redux</span><span class="skill-pill">REST APIs</span><span class="skill-pill">GraphQL</span><span class="skill-pill">Microservices</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h4>Data &amp; Distributed</h4>
+        <div class="skill-tags">
+          <span class="skill-pill">Apache Spark</span><span class="skill-pill">Kafka</span><span class="skill-pill">Hadoop</span><span class="skill-pill">Airflow</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h4>Databases</h4>
+        <div class="skill-tags">
+          <span class="skill-pill">MySQL</span><span class="skill-pill">PostgreSQL</span><span class="skill-pill">Oracle</span><span class="skill-pill">MongoDB</span><span class="skill-pill">Cassandra</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h4>Cloud &amp; DevOps</h4>
+        <div class="skill-tags">
+          <span class="skill-pill">AWS</span><span class="skill-pill">GCP</span><span class="skill-pill">Azure</span><span class="skill-pill">Docker</span><span class="skill-pill">Kubernetes</span><span class="skill-pill">Terraform</span><span class="skill-pill">Jenkins</span><span class="skill-pill">AWS CodeDeploy</span>
+        </div>
+      </div>
+      <div class="skill-cat">
+        <h4>AI / ML</h4>
+        <div class="skill-tags">
+          <span class="skill-pill">RAG</span><span class="skill-pill">Deep Agents</span><span class="skill-pill">LangGraph</span><span class="skill-pill">TensorFlow</span><span class="skill-pill">scikit-learn</span><span class="skill-pill">PyTorch</span><span class="skill-pill">MLOps</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-label">03 // Experience &amp; Impact</div>
+    <h2 class="section-title">Where I've <span>shipped</span></h2>
+    <div class="section-divider"></div>
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-header">
+          <div>
+            <div class="tl-role">Software Engineer III</div>
+            <div class="tl-company">Walmart Global Tech</div>
+          </div>
+          <span class="tl-date">May 2025 – Present · 1 yr 2 mo</span>
+        </div>
+        <div class="tl-loc">📍 Bentonville, AR</div>
+        <ul class="tl-bullets">
+          <li>Optimized high-volume Apache Spark jobs powering event-driven order creation across Walmart International Supply Chain (millions of orders/day).</li>
+          <li>Reduced production incidents through root-cause analysis and targeted reliability fixes in event-driven services.</li>
+          <li>Built AI-driven support tooling accelerating incident triage and lowering time-to-recovery for on-call engineers.</li>
+          <li>Led Java and Spring Boot upgrades, platform migrations, and production validation across enterprise applications.</li>
+        </ul>
+        <div class="tl-project">
+          <div class="tl-project-label">Featured Project</div>
+          <div class="tl-project-title">International Supply Chain Event Workflows</div>
+          <div class="tl-project-desc">Re-architected high-volume Spark pipelines and built AI-assisted incident tooling to improve reliability across Walmart's international order systems at enterprise scale.</div>
+          <div class="tl-stack"><span>Apache Spark</span><span>Java</span><span>Spring Boot</span><span>AI Tooling</span><span>Monitoring</span><span>AWS</span></div>
+          <div class="tl-metrics">
+            <span class="tl-metric-pill">10–30% Spark runtime cut</span>
+            <span class="tl-metric-pill">25–40% fewer incidents</span>
+            <span class="tl-metric-pill">Millions of orders/day</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-header">
+          <div>
+            <div class="tl-role">Full Stack Developer</div>
+            <div class="tl-company">EPICS at ASU</div>
+          </div>
+          <span class="tl-date">Jun 2024 – Apr 2025 · 11 mo</span>
+        </div>
+        <div class="tl-loc">📍 Tempe, AZ</div>
+        <ul class="tl-bullets">
+          <li>Built a full-stack event management platform from the ground up with QR-based check-ins and co-hosting features.</li>
+          <li>Deployed microservices on AWS with Kubernetes and automated infrastructure with Terraform.</li>
+          <li>Cut event check-in time by <span class="metric">20%</span> through optimized real-time QR workflows.</li>
+        </ul>
+        <div class="tl-project">
+          <div class="tl-project-label">Featured Project</div>
+          <div class="tl-project-title">Campus Event Management Platform</div>
+          <div class="tl-project-desc">End-to-end social platform for campus events — real-time QR check-ins, co-hosting, and user engagement features deployed on cloud-native infrastructure.</div>
+          <div class="tl-stack"><span>React</span><span>Spring Boot</span><span>AWS</span><span>Kubernetes</span><span>Terraform</span><span>TypeScript</span></div>
+          <div class="tl-metrics">
+            <span class="tl-metric-pill">1,000+ users</span>
+            <span class="tl-metric-pill">20% faster check-ins</span>
+            <span class="tl-metric-pill">Zero-downtime deploys</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-header">
+          <div>
+            <div class="tl-role">Graduate Research Assistant</div>
+            <div class="tl-company">Arizona State University</div>
+          </div>
+          <span class="tl-date">Dec 2022 – May 2024 · 1 yr 6 mo</span>
+        </div>
+        <div class="tl-loc">📍 Tempe, AZ</div>
+        <ul class="tl-bullets">
+          <li>Designed a detection-and-mitigation framework for load-redistribution attacks on power grids in collaboration with the <strong style="color:var(--text)">Israel–US BIRD Foundation</strong>.</li>
+          <li>Built and deployed a long-term load forecasting tool on AWS ECS with Spring Boot APIs and React dashboards.</li>
+          <li>Achieved <span class="metric">90%</span> attack detection accuracy, reducing risk of large-scale grid disruption.</li>
+        </ul>
+        <div class="tl-project">
+          <div class="tl-project-label">Featured Project</div>
+          <div class="tl-project-title">Power Grid Security &amp; Load Forecasting</div>
+          <div class="tl-project-desc">Research-grade detection framework and production forecasting service — built for real grid infrastructure in collaboration with US–Israel BIRD Foundation partners.</div>
+          <div class="tl-stack"><span>AWS ECS</span><span>Spring Boot</span><span>React</span><span>MLOps</span><span>Python</span><span>scikit-learn</span></div>
+          <div class="tl-metrics">
+            <span class="tl-metric-pill">90% detection accuracy</span>
+            <span class="tl-metric-pill">10% forecast improvement</span>
+            <span class="tl-metric-pill">BIRD Foundation collaboration</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-header">
+          <div>
+            <div class="tl-role">Full Stack Developer</div>
+            <div class="tl-company">Tata Consultancy Services</div>
+          </div>
+          <span class="tl-date">Oct 2020 – Jul 2022 · 1 yr 10 mo</span>
+        </div>
+        <div class="tl-loc">📍 India</div>
+        <ul class="tl-bullets">
+          <li>Built React and Redux interfaces for a Software-in-Loop application for automotive ADAS simulation.</li>
+          <li>Automated build, test, and release pipelines with Jenkins and AWS CodeDeploy.</li>
+          <li>Increased simulation and testing efficiency by <span class="metric">30%</span> through improved UI workflows and automation.</li>
+        </ul>
+        <div class="tl-project">
+          <div class="tl-project-label">Featured Project</div>
+          <div class="tl-project-title">Automotive ADAS Simulation Platform</div>
+          <div class="tl-project-desc">Software-in-the-loop platform enabling engineers to run, manage, and analyze ADAS simulation results — with full CI/CD automation for faster, reliable delivery cycles.</div>
+          <div class="tl-stack"><span>React</span><span>Redux</span><span>Jenkins</span><span>AWS CodeDeploy</span><span>Java</span></div>
+          <div class="tl-metrics">
+            <span class="tl-metric-pill">350+ engineers</span>
+            <span class="tl-metric-pill">30% efficiency gain</span>
+            <span class="tl-metric-pill">Automated CI/CD</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="section-inner">
+    <div class="section-label">05 // Certifications</div>
+    <h2 class="section-title">Certified across <span>cloud &amp; infra</span></h2>
+    <div class="section-divider"></div>
+    <div class="certs-grid">
+      <div class="cert-card reveal">
+        <div class="cert-issuer">Kubernetes</div>
+        <div class="cert-name">Certified Kubernetes Administrator</div>
+        <a class="cert-badge" href="https://www.credly.com/badges/7912f50a-b424-4805-88ea-6f329ff8ee99/linked_in_profile" target="_blank">View Badge ↗</a>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-issuer">HashiCorp</div>
+        <div class="cert-name">Certified Terraform Associate (003)</div>
+        <a class="cert-badge" href="https://www.credly.com/badges/e8677ed3-a8a3-41e6-bb35-0aaef0ba4377/linked_in_profile" target="_blank">View Badge ↗</a>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-issuer">AWS</div>
+        <div class="cert-name">AWS Certified Developer – Associate</div>
+        <a class="cert-badge" href="https://www.credly.com/badges/fdc420cc-dd11-40df-aa88-f5aa4e90e600" target="_blank">View Badge ↗</a>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-issuer">AWS</div>
+        <div class="cert-name">AWS Certified Solutions Architect – Associate</div>
+        <a class="cert-badge" href="https://www.credly.com/badges/8e5e8d26-974b-4a61-af26-43ef829bcb70/linked_in_profile" target="_blank">View Badge ↗</a>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-issuer">AWS</div>
+        <div class="cert-name">AWS Certified Cloud Practitioner</div>
+        <a class="cert-badge" href="https://www.credly.com/badges/4b6c6850-ea1a-4a30-8015-1f8bc03c445c/linked_in_profile" target="_blank">View Badge ↗</a>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-issuer">GCP</div>
+        <div class="cert-name">GCP Associate Cloud Engineer</div>
+        <a class="cert-badge" href="https://www.credly.com/badges/f926f557-5f63-49d7-9e45-7d8463f45acc/public_url" target="_blank">View Badge ↗</a>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-issuer">Snowflake</div>
+        <div class="cert-name">SnowPro Core Certification</div>
+        <a class="cert-badge" href="https://achieve.snowflake.com/353bdb04-eebd-407f-a457-e2f49c565442" target="_blank">View Credential ↗</a>
+      </div>
+      <div class="cert-card reveal">
+        <div class="cert-issuer">TensorFlow / DeepLearning.AI</div>
+        <div class="cert-name">Intro to TensorFlow for AI, ML &amp; Deep Learning</div>
+        <span class="cert-badge">Certified ✓</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="section-inner">
+    <div class="section-label">06 // Education</div>
+    <h2 class="section-title">Academic <span>foundation</span></h2>
+    <div class="section-divider"></div>
+    <div class="edu-grid reveal">
+      <div class="edu-card">
+        <div class="edu-degree">Master of Science</div>
+        <div class="edu-field">Computer Engineering (Computer Systems)</div>
+        <div class="edu-school">Arizona State University</div>
+        <div class="edu-detail">Tempe, AZ · 2022 – 2024</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-degree">Bachelor of Technology</div>
+        <div class="edu-field">Electrical and Electronics Engineering</div>
+        <div class="edu-school">JNTUH College of Engineering Hyderabad</div>
+        <div class="edu-detail">Hyderabad, India · 2016 – 2020</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-label">07 // Contact</div>
+    <h2 class="section-title">Let's <span>connect</span></h2>
+    <div class="section-divider"></div>
+    <div class="contact-layout reveal">
+      <div>
+        <p style="color:var(--muted);font-size:.88rem;margin-bottom:1.5rem;line-height:1.75;">Open to <strong style="color:var(--text)">Senior Full Stack Engineer</strong> roles — owning APIs and microservices end-to-end, building user-facing features, and raising reliability in cloud-native environments. Message me for resume, portfolio, or code samples.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:avinashkodali9@gmail.com">
+            <div class="cli ci-e">@</div>
+            <div>
+              <div style="font-size:.72rem;color:var(--muted);">Email</div>
+              <div style="font-size:.85rem;">avinashkodali9@gmail.com</div>
+            </div>
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/avinashkodali" target="_blank">
+            <div class="cli ci-l">in</div>
+            <div>
+              <div style="font-size:.72rem;color:var(--muted);">LinkedIn</div>
+              <div style="font-size:.85rem;">linkedin.com/in/avinashkodali</div>
+            </div>
+          </a>
+          <a class="contact-link" href="https://avinashkodali.github.io/portfolio/" target="_blank">
+            <div class="cli ci-g">GH</div>
+            <div>
+              <div style="font-size:.72rem;color:var(--muted);">Portfolio / GitHub</div>
+              <div style="font-size:.85rem;">avinashkodali.github.io/portfolio</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="form-row">
+          <input class="form-input" type="text" placeholder="Name"/>
+          <input class="form-input" type="email" placeholder="Email"/>
+        </div>
+        <input class="form-input" type="text" placeholder="Subject"/>
+        <textarea class="form-input" placeholder="Your message..."></textarea>
+        <button class="btn-send">Send Message →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>&lt;</span> Avinash Kodali · Software Engineer III @ Walmart Global Tech · Open to Senior Full Stack roles <span>/&gt;</span>
+</footer>
+
+<script>
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting){e.target.classList.add('visible');obs.unobserve(e.target);}});
+},{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
+</script>
+</body>
+</html>
