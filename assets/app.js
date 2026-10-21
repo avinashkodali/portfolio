@@ -10,9 +10,9 @@ const cases = {
       "Built pipelines with Apache Spark, Apache Hudi, and Airflow as part of a migration from Kubernetes-based microservices to distributed processing.",
       "Applied reliability improvements and data-quality checks across Kafka processing, Spark workloads, databases, and services."
     ],
-    "result": "10–30% reduction in execution time across the five optimized Spark jobs. Related reliability work reduced production incidents by 25–40%.",
+    "result": "10–30% reduction in execution time across the five optimized Spark jobs. Related reliability work reduced production incidents by 25–40%. The batch-processing migration contributed to a 40% reduction in operational alerts.",
     "context": "The optimization work covered five production Spark jobs. Separate batch-pipeline development used Spark, Hudi, and Airflow as part of a migration from Kubernetes-based microservices to distributed processing.",
-    "projection": "Projected migration outcomes: $1M in annual cloud savings and a 40% reduction in operational alerts. These are projections, separate from the achieved runtime and incident reductions."
+    "projection": "Projected migration outcome: $1M in annual cloud savings. The 40% reduction in operational alerts is an achieved result, separate from this savings projection."
   },
   "events": {
     "meta": "Arizona State University / Full-stack development",
